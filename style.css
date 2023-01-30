@@ -1,0 +1,220 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    margin: 0px;
+    font-family: 'Ubuntu', sans-serif;
+    width: 100vw;
+}
+
+header {
+    height: calc(100vh - 150px);
+    /*background: no-repeat center/cover url(imagens/imgfundo.jpg);*/
+    background-color: #C9FFDE;
+}
+
+.imagem-header {
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    margin: auto 30px;
+}
+
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    font-weight: bold;
+    
+}
+
+header nav ul li {
+    margin: 0 16px;
+    text-decoration: none;
+    
+}
+
+.header-content {
+    max-width: 400px;
+    margin: 120px auto;
+    text-align: center;
+}
+
+.header-content h1 {
+    margin-bottom: 10px;
+    font-size: 4em;
+}
+
+.informacoes {
+    background: #FFD5EF;
+    padding: 20px;
+}
+
+.informacoes .informacoes-cards {
+    display: flex;
+    margin: auto;
+    max-width: 950px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.informacoes .informacoes-title {
+    width: 100%;
+    margin: 25px 0;
+    text-align: center;
+}
+
+.informacoes .card {
+    width: 250px;
+    height: 350px;
+    
+    border-radius: 24px 0;
+    margin: 25px;
+    position: relative;
+}
+
+.informacoes .card-image {
+    width: 200px;
+    height: 200px;
+}
+
+
+.projetos {
+    padding: 50px;
+    background-color: #C0F9FF;
+}
+
+.projetos .projetos-title {
+    text-align: center;
+    margin: 35px 0;
+}
+
+.projetos .projetos-card {
+    display: flex;
+    max-width: 950px;
+    justify-content: center;
+    margin: auto;
+    flex-wrap: wrap;
+}
+
+.projetos .card {
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 20px;
+}
+
+.projetos .card .card-content {
+    height: 180px;
+    text-align: center;
+    
+}
+
+
+.projetos button {
+    background: #F8FFD4;
+    
+}
+
+.contato {
+    padding: 50px;
+    background-color: #D4CCFF;
+}
+
+.contato  .contato-title {
+    text-align: center;
+    margin: 35px 0;
+}
+
+.contato .contato-card {
+    display: flex;
+    max-width: 950px;
+    justify-content: center;
+    margin: auto;
+    flex-wrap: wrap;
+}
+
+.contato .card {
+    width: 26px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    padding-bottom: 10px;
+}
+
+.projetos .card .card-content {
+    height: 180px;
+    text-align: center;
+}
+
+
+/* Responsividade */
+
+
+@media (max-width: 767px) {
+
+    body {
+        margin-bottom: 55px;
+    }
+
+    header nav ul {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+
+        z-index: 99;
+
+        background: #f7f7f7;
+        color: rgb(0, 0, 0);
+        font-weight: bold;
+        height: 55px;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    header nav p {
+        width: 100%;
+        text-align: center;
+    }
+
+    .contato {
+        padding: 60px 0;
+    }
+
+    .contato .contato-card {
+        position: static;
+        margin: 20px auto;
+    } 
+    
+
+/* Landscape phones and down */
+@media (max-width: 480px) {}
+
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 979px) {}
+
+/* Large desktop */
+@media (min-width: 1200px) {}
